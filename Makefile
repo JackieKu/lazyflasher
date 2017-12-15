@@ -1,4 +1,4 @@
-NAME ?= kernel-flasher
+NAME ?= adb-root
 
 VERSION ?= 6.0
 
