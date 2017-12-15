@@ -1,0 +1,9 @@
+#!/sbin/sh
+
+. "$env"
+
+print "Set SELinux to permissive mode ..."
+
+setcmdline androidboot.selinux permissive
+
+exit 0

@@ -61,9 +61,10 @@ umount() {
 }
 
 print "#######################################"
+print "#         Permissive SELinux          #"
+print "#######################################"
 print "#           kernel flasher            #"
 print "#      by jcadduono, version 6.0      #"
-print "#   add your own intro message here!  #"
 print "#######################################"
 
 # Unpack the installer
