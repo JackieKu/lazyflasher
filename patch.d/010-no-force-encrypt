@@ -10,7 +10,8 @@ for fstab in fstab.*; do
 	[ -f "$fstab" ] || continue
 	print "Found fstab: $fstab"
 	sed -i "
-		s/\b\(forceencrypt\|forcefdeorfbe\)=/encryptable=/g
+		s/\b\(forceencrypt\|forcefdeorfbe\)=/encryptable=/g;
+		s/\bfileencryption=ice\b/encryptable=footer/g
 	" "$fstab"
 	found_fstab=true
 done
