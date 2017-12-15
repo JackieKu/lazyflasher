@@ -1,4 +1,4 @@
-NAME ?= no-verity-opt-encrypt
+NAME ?= no-encrypt-no-zram
 
 VERSION ?= 6.0
 

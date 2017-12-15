@@ -48,6 +48,8 @@ setperm() {
 }
 
 print "#######################################"
+print "#             ZRAM remover            #"
+print "#######################################"
 print "#   dm-verity and forced encryption   #"
 print "#        disabler by jcadduono        #"
 print "#             version 6.0             #"
