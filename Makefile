@@ -1,4 +1,4 @@
-NAME ?= kernel-flasher
+NAME ?= yes-selinux
 
 VERSION ?= 6.0
 

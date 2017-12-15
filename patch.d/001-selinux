@@ -1,0 +1,9 @@
+#!/sbin/sh
+
+. "$env"
+
+print "Set SELinux to enforcing mode ..."
+
+setcmdline androidboot.selinux enforcing
+
+exit 0
