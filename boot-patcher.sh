@@ -305,7 +305,7 @@ build_boot
 
 samsung_tag
 
-sign_chromeos
+#sign_chromeos
 
 verify_size
 
