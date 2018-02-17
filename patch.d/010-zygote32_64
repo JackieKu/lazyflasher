@@ -1,0 +1,5 @@
+#!/sbin/sh
+
+. "$env"
+
+setprop ro.zygote zygote32_64
