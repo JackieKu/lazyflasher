@@ -1,0 +1,5 @@
+#!/sbin/sh
+
+. "$env"
+
+sed -i 's:lib64/libril-qc-qmi-1.so:lib/libril-qc-qmi-1.so:g' "$ramdisk/init.flounder.rc"
