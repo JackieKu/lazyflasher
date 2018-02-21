@@ -112,11 +112,19 @@ setcmdline() {
 # setprop <prop> <value>
 # set a prop value in default.prop
 setprop() {
-	$found_prop || return
-	if grep -q "^[[:space:]]*$1[[:space:]]*=" "$default_prop"; then
-		sed -i "s/^[[:space:]]*$1[[:space:]]*=.*$/$1=$2/g" "$default_prop"
+	_setprop "$1" "$2" "$found_prop" "$default_prop"
+}
+
+set_build_prop() {
+	_setprop "$1" "$2" "$found_build_prop" "$build_prop"
+}
+
+_setprop() {
+	$3 || return
+	if grep -q "^[[:space:]]*$1[[:space:]]*=" "$4"; then
+		sed -i "s/^[[:space:]]*$1[[:space:]]*=.*$/$1=$2/g" "$4"
 	else
-		echo "$1=$2" >> "$default_prop"
+		echo "$1=$2" >> "$4"
 	fi
 }
 
